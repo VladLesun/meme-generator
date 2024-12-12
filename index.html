@@ -5,9 +5,61 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Memes app</title>
 
+		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="index.css" />
 
+		<script src="model.js" defer></script>
+		<script src="view.js" defer></script>
+		<script src="api.js" defer></script>
+		<script src="controller.js" defer></script>
 		<script src="index.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="app">
+			<div class="container">
+				<h1 class="app__title">Приложение для генерации мемов</h1>
+				<div class="app__content">
+					<div class="app__setting">
+						<h2 class="app__subtitle">Настройки:</h2>
+						<div class="app__setting-inner">
+							<label class="app__label" for="js-select">
+								<h3 class="app__label-title">Мем</h3>
+								<select class="app__label-select" id="js-select"></select>
+							</label>
+							<label class="app__label" for="js-input-top">
+								<h3 class="app__label-title">Текст сверху</h3>
+								<input
+									class="app__label-input"
+									id="js-input-top"
+									placeholder="Введите текст сверху"
+								/>
+							</label>
+							<label class="app__label" for="js-input-bottom">
+								<h3 class="app__label-title">Текст снизу</h3>
+								<input
+									class="app__label-input"
+									id="js-input-bottom"
+									placeholder="Введите текст снизу"
+								/>
+							</label>
+						</div>
+					</div>
+					<div class="app__preview">
+						<h2 class="app__subtitle">Превью:</h2>
+						<div class="app__image-container">
+							<img class="app__image" id="js-image" src="" />
+							<p
+								class="app__image-text app__image-text_top"
+								id="js-text-top"
+							></p>
+							<p
+								class="app__image-text app__image-text_bottom"
+								id="js-text-bottom"
+							></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

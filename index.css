@@ -1,0 +1,96 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-weight: 400;
+	font-size: 35px;
+	background-color: #fff;
+	color: #000;
+}
+
+select,
+input {
+	outline: none;
+	border: none;
+}
+
+.app {
+	padding: 50px 0;
+}
+.container {
+	max-width: 1224px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.app__title {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 70px;
+	text-align: center;
+}
+.app__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.app__setting {
+	width: 100%;
+	max-width: 450px;
+}
+.app__setting-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.app__subtitle {
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 50px;
+}
+.app__label-title {
+	margin-bottom: 15px;
+	font-size: 35px;
+}
+.app__label-select,
+.app__label-input {
+	width: 100%;
+	height: 54px;
+	padding: 10px 20px;
+	border: 1px solid #000;
+	border-radius: 15px;
+	font-weight: 400;
+	font-size: 25px;
+}
+.app__image-container {
+	position: relative;
+	margin: 0 auto;
+}
+.app__image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.app__image-text {
+	padding: 5px 10px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 35px;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+.app__image-text_top {
+	top: 22px;
+}
+.app__image-text_bottom {
+	bottom: 22px;
+}
+

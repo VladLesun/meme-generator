@@ -1,4 +1,5 @@
 const MEMES_MOCK = [
+	//! Моковое API
 	{
 		id: '181913649',
 		name: 'Drake Hotline Bling',
@@ -57,15 +58,10 @@ const MEMES_MOCK = [
 	},
 ];
 
-class API {
+export default class API {
 	constructor() {
-		// this.memes = MEMES_MOCK;
 		this.baseUrl = 'https://api.imgflip.com';
 	}
-
-	// getMemes() {
-	// 	return this.memes;
-	// }
 
 	fetchMemes() {
 		return fetch(`${this.baseUrl}/get_memes`).then(data => data.json());
